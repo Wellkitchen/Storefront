@@ -1,0 +1,345 @@
+html, body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+.site-logo {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin: 0px 10px;
+}
+
+
+.hero-banner {
+  background: url("https://wellkitchen.com.au/assets/images/WK-hero-banner-01.jpg") no-repeat center center;
+  background-size: cover;
+  height: 600px;
+  color: #fff;
+}
+
+.hero-banner .py-5 {
+  padding-top: 20rem!important;
+  padding-bottom: 1rem!important;
+}
+
+.page-banner {
+  background: url("https://wellkitchen.com.au/assets/images/WK-hero-banner-02.jpg") no-repeat center center;
+  background-size: cover;
+  height: 600px;
+  color: #fff;
+}
+
+.page-banner .py-5 {
+  padding-top: 20rem!important;
+  padding-bottom: 1rem!important;
+}
+
+.section-title {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  margin: 60px 0 30px;
+}
+
+.section-title small {
+  display: block;
+  font-size: 50%;
+  color: #aaa;
+}
+
+
+footer {
+  margin-bottom: 50px;
+}
+
+
+
+.footer-carousel {
+  background: url("https://wellkitchen.com.au/assets/images/footer-bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  color: #fff;
+  text-align: center;
+  padding: 130px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.footer-carousel::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0,0,0,0.3);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.row-cols-2>.col:nth-child(odd) {
+  padding-right: calc(var(--bs-gutter-x)/ 4);
+}
+.row-cols-2>.col:nth-child(even)  {
+  padding-left: calc(var(--bs-gutter-x)/ 4);
+}
+
+#mainHeroCaptions img {
+  max-height: 65vh;
+  min-height: 480px;
+  object-fit: cover;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+
+@media (min-width: 1024px) {
+  .section-discover .align-items-md-stretch {
+    height: 800px;
+  }
+}
+
+.section-discover > div > div {
+  margin-bottom: calc(var(--bs-gutter-x));
+}
+
+
+.section-discover .rounded-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Stick contents to bottom  */
+  position: relative;
+}
+
+.section-discover .rounded-3 a {
+  align-self: start; /* Prevent width streaching */
+}
+
+.section-discover img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  z-index: 0;
+}
+.section-discover .text-box {
+  position: relative;
+  z-index: 1;
+}
+
+.site-logo__slogan {
+  display: flex;
+  align-items: center; /* Vertical center */
+  margin: 74px 0 0 -109px;
+  font-size: 14px;
+  font-style: italic;
+  color: #3697CA;
+}
+@media (max-width: 1600px) {
+  .site-logo__slogan {
+    display: none;
+  }
+}
+
+
+
+
+.page-hero {
+  position: relative;
+  height: 500px;
+  color: #fff;
+  display: flex;
+}
+.page-hero__text {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  align-items: center;;
+  justify-content: center;
+}
+.page-hero__bg {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+
+.section-block {
+  padding-top: 3.3vmax;
+  padding-bottom: 3.3vmax;
+}
+
+
+.section-contact {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 3.3vmax;
+  margin-bottom: 3.3vmax;
+  line-height: 1.8;
+}
+@media (min-width: 768px) {
+  .section-contact {
+    font-size: 22px;
+    text-align: left;
+  }
+}
+
+.section-contact h2 {
+  margin-bottom: 2rem;
+}
+
+.section-shipping {
+  margin-bottom: 60px;
+}
+
+.section-shipping .feature-icon {
+  width: 50px;
+  text-align: center;
+  margin: 0 0 2rem;
+}
+.section-shipping .feature-icon svg {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+.navbar-toggler,
+.navbar-light .navbar-toggler,
+.navbar-light .navbar-toggler:hover,
+.navbar-light .navbar-toggler:focus {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+}
+
+/* Logo */
+@media (max-width: 1199px) {
+  .site-logo {
+    width: 150px;
+  }
+}
+
+/* Header */
+@media (min-width: 1200px) {
+  .site-header {
+    padding-top: 2em;
+    padding-bottom: 3em;
+  }
+  .navbar-nav {
+    margin-top: 18px;
+  }
+  .navbar-nav a {
+    font-size: 18px;
+  }
+}
+
+
+
+.home-hero {
+  font-size: 18px;
+}
+.home-hero h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Bootstrap Default carousel caption style override  */
+.home-hero .carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: auto;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+}
+/* Custom */
+
+
+@media (min-width: 768px) {
+  .home-hero {
+    font-size: 22px;
+  }
+  .home-hero h2 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 1200px) {
+  .home-hero {
+    font-size: 28px;
+    min-height: 65vh;
+  }
+  .home-hero h2 {
+    font-size: 56px;
+    font-weight: bold;
+  }
+  .home-hero .carousel-caption {
+    text-align: left;
+    top: auto;
+    bottom: 5%;
+  }
+}
+
+.section-discover .text-box {
+  text-shadow: 0 0 5px #000;
+}
+.section-discover h3 {
+  font-weight: bold;
+}
+.section-discover .rounded-3 a {
+  background: #000;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+}
+@media (min-width: 1200px) {
+  .section-discover .text-box {
+      background: rgba(0,0,0,0.5);
+      position: absolute;
+      left: 18px;
+      bottom: 18px;
+  /*     width: 100%; */
+  /*     box-sizing: border-box; */
+      padding: 28px 6vw 28px 28px;
+  }
+}
