@@ -20,7 +20,6 @@ html, body {
   margin: 74px 0 0 -109px;
   font-size: 14px;
   font-style: italic;
-  color: #3697CA;
 }
 @media (max-width: 1199px) {
   .site-logo {
@@ -30,6 +29,81 @@ html, body {
 @media (max-width: 1600px) {
   .site-logo__slogan {
     display: none;
+  }
+}
+
+.site-logo__slogan span {
+  position: absolute;
+  left: 135px;
+}
+
+.site-logo__slogan .slogan-1 {
+  color: #3697CA;
+}
+.site-logo__slogan .slogan-2 {
+  color: #67ab2c;
+  opacity: 0;
+}
+
+/* Slogan animation */
+@media (min-width: 1601px) {
+  .site-logo__slogan span {
+    -webkit-animation-name: fade_2;
+            animation-name: fade_2;
+    -webkit-animation-duration: 12s;
+            animation-duration: 12s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes fade_2 {
+    0% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    8% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    48% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    55% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fade_2 {
+    0% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    8% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    48% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    55% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .site-logo__slogan .slogan-1 {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  .site-logo__slogan .slogan-2 {
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
   }
 }
 
